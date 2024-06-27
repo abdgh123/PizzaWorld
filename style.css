@@ -14,6 +14,7 @@ body{
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    resize: both;
 }
 nav{
         display: flex;
@@ -21,6 +22,8 @@ nav{
         align-items: center;
         background-color: #133040;
         color: white;
+        width: 100%;
+        position: fixed;
     
       }
     
@@ -30,6 +33,7 @@ nav{
         border-radius: 50px;
         margin-right: 70px;
         height: auto; /* To maintain aspect ratio */
+        resize: both;
       }
     
       .title {
@@ -37,6 +41,7 @@ nav{
         /* Optional: Adjust margin to center title vertically with logo */
         margin: 5px;
         text-align: center;
+        resize: both;
       }
 
 .menu{
@@ -66,4 +71,9 @@ nav{
 }
 .item-details{
     color: black;
+}
+@media only screen and (max-width: 1024px) {
+    .nav{
+        visibility: collapse;
+    }
 }
