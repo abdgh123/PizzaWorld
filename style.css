@@ -1,0 +1,69 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family:  "Papyrus", fantasy;
+    color: black;
+    text-align: center;
+    overflow: auto;
+    align-items: block;
+    background-image: url(Pizza-Background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #133040;
+        color: white;
+    
+      }
+    
+      .logo {
+        /* Adjust width and height as needed for your logo */
+        width: 100px;
+        border-radius: 50px;
+        margin-right: 70px;
+        height: auto; /* To maintain aspect ratio */
+      }
+    
+      .title {
+        font-size: 2em;
+        /* Optional: Adjust margin to center title vertically with logo */
+        margin: 5px;
+        text-align: center;
+      }
+
+.menu{
+    margin: auto;
+    display: block;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.container {
+    display: flex;
+    flex-direction: row; /* Arrange items in a column */
+    align-items: flex-start; /* Align items to the start (left) */
+}
+/* CSS for each item box */
+.item-box {
+    width: 200px; /* Adjust width as needed */
+    padding: 20px;
+    margin-bottom: 10px; /* Space between boxes */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin-left: 30px;
+    border-radius: 25px;
+}
+
+.item-box:hover {
+    transform: scale(1.05);
+}
+.item-details{
+    color: black;
+}
